@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pwnaddress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: example_connection_netcat
+    image: examplepwn
+    ports:
+      - "1001:1001"
+    network_mode: bridge
